@@ -23,25 +23,35 @@ class _InputPageState extends State<InputPage> {
             child: Row(
               children: [
                 Expanded(
-                  child: ReusalbeCard(color: Color(0xFF1D1E33),),
+                  child: ReusalbeCard(
+                    color: Color(0xFF1D1E33),
+                  ),
                 ),
                 Expanded(
-                  child: ReusalbeCard(color: Color(0xFF1D1E33),),
+                  child: ReusalbeCard(
+                    color: Color(0xFF1D1E33),
+                  ),
                 ),
               ],
             ),
           ),
           Expanded(
-            child: ReusalbeCard(color: Color(0xFF1D1E33),),
+            child: ReusalbeCard(
+              color: Color(0xFF1D1E33),
+            ),
           ),
           Expanded(
             child: Row(
               children: [
                 Expanded(
-                  child: ReusalbeCard(color: Color(0xFF1D1E33),),
+                  child: ReusalbeCard(
+                    color: Color(0xFF1D1E33),
+                  ),
                 ),
                 Expanded(
-                  child: ReusalbeCard(color: Color(0xFF1D1E33), ),
+                  child: ReusalbeCard(
+                    color: Color(0xFF1D1E33),
+                  ),
                 ),
               ],
             ),
@@ -54,7 +64,7 @@ class _InputPageState extends State<InputPage> {
 
 class ReusalbeCard extends StatelessWidget {
   ReusalbeCard({@required this.color});
-    final Color color;
+  final Color color;
   @override
   Widget build(BuildContext context) {
     return Container(
