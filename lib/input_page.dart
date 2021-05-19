@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'gender_card.dart';
+import 'reusable_card.dart';
 
+const Activecolor= Color(0xFF1D1E33);
 class InputPage extends StatefulWidget {
   const InputPage({Key key}) : super(key: key);
   @override
@@ -24,12 +28,14 @@ class _InputPageState extends State<InputPage> {
               children: [
                 Expanded(
                   child: ReusalbeCard(
-                    color: Color(0xFF1D1E33),
+                    color: Activecolor,
+                    cardChild: GenderCard(gender: "MALE",iconsa: FontAwesomeIcons.mars,),
                   ),
                 ),
                 Expanded(
                   child: ReusalbeCard(
-                    color: Color(0xFF1D1E33),
+                    cardChild: GenderCard(gender: "FEMALE",iconsa: FontAwesomeIcons.venus,),
+                    color: Activecolor,
                   ),
                 ),
               ],
@@ -37,7 +43,7 @@ class _InputPageState extends State<InputPage> {
           ),
           Expanded(
             child: ReusalbeCard(
-              color: Color(0xFF1D1E33),
+              color: Activecolor,
             ),
           ),
           Expanded(
@@ -45,33 +51,24 @@ class _InputPageState extends State<InputPage> {
               children: [
                 Expanded(
                   child: ReusalbeCard(
-                    color: Color(0xFF1D1E33),
+                    color: Activecolor,
                   ),
                 ),
                 Expanded(
                   child: ReusalbeCard(
-                    color: Color(0xFF1D1E33),
+                    color: Activecolor,
                   ),
                 ),
               ],
             ),
           ),
+          Container(
+            width: double.infinity,
+            color: Color(0xFFEB1555),
+            margin: EdgeInsets.only(top: 10.0),
+            height: 80.0,
+          ),
         ],
-      ),
-    );
-  }
-}
-
-class ReusalbeCard extends StatelessWidget {
-  ReusalbeCard({@required this.color});
-  final Color color;
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.all(15.0),
-      decoration: BoxDecoration(
-        color: color,
-        borderRadius: BorderRadius.circular(10),
       ),
     );
   }
