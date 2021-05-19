@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'constants.dart';
 
 class GenderCard extends StatelessWidget {
   GenderCard({this.gender, this.iconsa});
@@ -22,10 +23,7 @@ class GenderCard extends StatelessWidget {
         Center(
           child: Text(
             gender,
-            style: TextStyle(
-              fontSize: 18,
-              color: Color(0xFF8D8E98),
-            ),
+            style: kLabelTextStyle,
           ),
         ),
       ],
