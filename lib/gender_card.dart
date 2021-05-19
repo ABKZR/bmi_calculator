@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+
 class GenderCard extends StatelessWidget {
   GenderCard({this.gender, this.iconsa});
   final String gender;
   final IconData iconsa;
-
 
   @override
   Widget build(BuildContext context) {
@@ -20,9 +20,13 @@ class GenderCard extends StatelessWidget {
           height: 15,
         ),
         Center(
-          child: Text(gender,style: TextStyle(
-            fontSize: 18, color: Color(0xFF8D8E98),
-          ),),
+          child: Text(
+            gender,
+            style: TextStyle(
+              fontSize: 18,
+              color: Color(0xFF8D8E98),
+            ),
+          ),
         ),
       ],
     );

@@ -3,7 +3,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'gender_card.dart';
 import 'reusable_card.dart';
 
-const Activecolor= Color(0xFF1D1E33);
+const Activecolor = Color(0xFF1D1E33);
+
 class InputPage extends StatefulWidget {
   const InputPage({Key key}) : super(key: key);
   @override
@@ -29,12 +30,18 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: ReusalbeCard(
                     color: Activecolor,
-                    cardChild: GenderCard(gender: "MALE",iconsa: FontAwesomeIcons.mars,),
+                    cardChild: GenderCard(
+                      gender: "MALE",
+                      iconsa: FontAwesomeIcons.mars,
+                    ),
                   ),
                 ),
                 Expanded(
                   child: ReusalbeCard(
-                    cardChild: GenderCard(gender: "FEMALE",iconsa: FontAwesomeIcons.venus,),
+                    cardChild: GenderCard(
+                      gender: "FEMALE",
+                      iconsa: FontAwesomeIcons.venus,
+                    ),
                     color: Activecolor,
                   ),
                 ),
