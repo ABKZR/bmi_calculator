@@ -17,33 +17,6 @@ class InputPage extends StatefulWidget {
 class _InputPageState extends State<InputPage> {
   Gender selectedGender;
 
-  //
-  // Color maleCardColor=InacticeColor;
-  // Color femaleCardColor=InacticeColor;
-  //
-  // void updateColor(Gender gender){
-  //   if(gender ==Gender.male){
-  //     if(maleCardColor == InacticeColor){
-  //       maleCardColor=Activecolor;
-  //       femaleCardColor=InacticeColor;
-  //     }
-  //     else{
-  //       maleCardColor=InacticeColor;
-  //     }
-  //
-  //   }
-  //   if(gender ==Gender.female){
-  //     if(femaleCardColor == InacticeColor){
-  //       femaleCardColor=Activecolor;
-  //       maleCardColor=InacticeColor;
-  //     }
-  //     else{
-  //       femaleCardColor=InacticeColor;
-  //     }
-  //
-  //   }
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,7 +37,7 @@ class _InputPageState extends State<InputPage> {
                     onTap: (){
                       setState(() {
                         selectedGender=Gender.male;
-                      }); 
+                      });
                     },
                     child: ReusalbeCard(
                       color: selectedGender == Gender.male ? Activecolor: InacticeColor,
