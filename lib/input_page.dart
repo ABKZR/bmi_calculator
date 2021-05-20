@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'gender_card.dart';
@@ -15,6 +16,8 @@ class InputPage extends StatefulWidget {
 class _InputPageState extends State<InputPage> {
   Gender selectedGender;
   int height = 180;
+  int weight = 60;
+  int age = 18;
 
   @override
   Widget build(BuildContext context) {
@@ -100,7 +103,8 @@ class _InputPageState extends State<InputPage> {
                       overlayColor: Color(0x29EB1555),
                       thumbShape:
                           RoundSliderThumbShape(enabledThumbRadius: 15.0),
-                      overlayShape: RoundSliderOverlayShape(overlayRadius: 30.0),
+                      overlayShape:
+                          RoundSliderOverlayShape(overlayRadius: 30.0),
                     ),
                     child: Slider(
                       value: height.toDouble(),
@@ -123,11 +127,123 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: ReusalbeCard(
                     color: kActivecolor,
+                    cardChild: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('WEIGHT', style: kLabelTextStyle,),
+                        Text(
+                          weight.toString(),
+                          style: kBoldTextStyle,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            TextButton(
+                              child: Padding(
+                                padding: const EdgeInsets.only(bottom: 5.0),
+                                child: Icon(
+                                  FontAwesomeIcons.minus,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              style: TextButton.styleFrom(
+                                shape: CircleBorder(),
+                                padding: EdgeInsets.all(15),
+                                backgroundColor: Color(0xFF111328),
+                              ),
+                              onPressed:(){
+                                setState(() {
+                                  weight--;
+                                });
+                              },
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            TextButton(
+                              child: Padding(
+                                padding: const EdgeInsets.only(bottom: 5),
+                                child: Icon(
+                                  FontAwesomeIcons.plus,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              style: TextButton.styleFrom(
+                                shape: CircleBorder(),
+                                padding: EdgeInsets.all(15),
+                                backgroundColor: Color(0xFF111328),
+                              ),
+                              onPressed:(){
+                                setState(() {
+                                  weight++;
+                                });
+                              },
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(
                   child: ReusalbeCard(
                     color: kActivecolor,
+                    cardChild: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('Age', style: kLabelTextStyle,),
+                        Text(
+                          age.toString(),
+                          style: kBoldTextStyle,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            TextButton(
+                              child: Padding(
+                                padding: const EdgeInsets.only(bottom: 5.0),
+                                child: Icon(
+                                  FontAwesomeIcons.minus,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              style: TextButton.styleFrom(
+                                shape: CircleBorder(),
+                                padding: EdgeInsets.all(15),
+                                backgroundColor: Color(0xFF111328),
+                              ),
+                              onPressed:(){
+                                setState(() {
+                                  age--;
+                                });
+                              },
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            TextButton(
+                              child: Padding(
+                                padding: const EdgeInsets.only(bottom: 5),
+                                child: Icon(
+                                  FontAwesomeIcons.plus,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              style: TextButton.styleFrom(
+                                shape: CircleBorder(),
+                                padding: EdgeInsets.all(15),
+                                backgroundColor: Color(0xFF111328),
+                              ),
+                              onPressed:(){
+                                setState(() {
+                                  age++;
+                                });
+                              },
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],
