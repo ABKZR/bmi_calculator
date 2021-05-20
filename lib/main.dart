@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'input_page.dart';
+import './screens/input_page.dart';
 import 'constants.dart';
-
+import 'screens/result_page.dart';
 void main() {
   runApp(MyApp());
 }
