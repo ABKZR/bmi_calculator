@@ -146,11 +146,7 @@ class _InputPageState extends State<InputPage> {
                                   color: Colors.white,
                                 ),
                               ),
-                              style: TextButton.styleFrom(
-                                shape: CircleBorder(),
-                                padding: EdgeInsets.all(15),
-                                backgroundColor: Color(0xFF111328),
-                              ),
+                              style: kButtonStyle,
                               onPressed:(){
                                 setState(() {
                                   weight--;
@@ -168,11 +164,7 @@ class _InputPageState extends State<InputPage> {
                                   color: Colors.white,
                                 ),
                               ),
-                              style: TextButton.styleFrom(
-                                shape: CircleBorder(),
-                                padding: EdgeInsets.all(15),
-                                backgroundColor: Color(0xFF111328),
-                              ),
+                              style: kButtonStyle,
                               onPressed:(){
                                 setState(() {
                                   weight++;
@@ -207,11 +199,7 @@ class _InputPageState extends State<InputPage> {
                                   color: Colors.white,
                                 ),
                               ),
-                              style: TextButton.styleFrom(
-                                shape: CircleBorder(),
-                                padding: EdgeInsets.all(15),
-                                backgroundColor: Color(0xFF111328),
-                              ),
+                              style: kButtonStyle,
                               onPressed:(){
                                 setState(() {
                                   age--;
@@ -229,11 +217,7 @@ class _InputPageState extends State<InputPage> {
                                   color: Colors.white,
                                 ),
                               ),
-                              style: TextButton.styleFrom(
-                                shape: CircleBorder(),
-                                padding: EdgeInsets.all(15),
-                                backgroundColor: Color(0xFF111328),
-                              ),
+                              style: kButtonStyle,
                               onPressed:(){
                                 setState(() {
                                   age++;

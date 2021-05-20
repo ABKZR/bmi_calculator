@@ -8,6 +8,11 @@ const kBoldTextStyle = TextStyle(
   fontSize: 50.0,
   fontWeight: FontWeight.w900,
 );
+final kButtonStyle = TextButton.styleFrom(
+  shape: CircleBorder(),
+  padding: EdgeInsets.all(15),
+  backgroundColor: Color(0xFF111328),
+);
 
 const kActivecolor = Color(0xFF1D1E33);
 const kInacticeColor = Color(0xFF111328);
