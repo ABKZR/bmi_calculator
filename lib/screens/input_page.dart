@@ -220,14 +220,14 @@ class _InputPageState extends State<InputPage> {
             onPressed: () {
               CalculatorBrain cal =
                   CalculatorBrain(height: height, weight: weight);
-              ResultsPage(
-                bmiResult: cal.calculateBMI(),
-                interpretation: cal.getInterpretation(),
-                resultText: cal.getResult(),
-              );
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ResultsPage()),
+                MaterialPageRoute(
+                    builder: (context) => ResultsPage(
+                          bmiResult: cal.calculateBMI(),
+                          interpretation: cal.getInterpretation(),
+                          resultText: cal.getResult(),
+                        )),
               );
             },
           ),
